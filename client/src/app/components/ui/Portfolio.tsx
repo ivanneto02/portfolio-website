@@ -1,6 +1,6 @@
 export function Portfolio() {
         return (
-                <div className="mt-[5%] ml-[20%] mr-[20%] h-[95%]">
+                <div>
                         <li>Project 1</li>
                         <li>Project 2</li>
                         <li>Project 3</li>
