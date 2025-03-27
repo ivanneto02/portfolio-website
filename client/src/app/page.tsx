@@ -1,11 +1,10 @@
-import { Header, Footer, Portfolio } from "@/components";
+import { Portfolio } from "@/app/components";
+import { Page } from "@/app/components";
 
 export default function Home() {
         return (
-                <div className="h-svh text-xl font-[family-name:var(--font-geist-sans)]">
-                        <Header />
+                <Page>
                         <Portfolio />
-                        <Footer />
-                </div>
+                </Page>
         );
 }
