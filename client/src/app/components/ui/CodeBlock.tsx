@@ -1,23 +1,13 @@
-"use client"
-
 import React from "react";
-import hljs from "highlight.js";
 
-import "highlight.js/styles/github-dark.css";
+type Props = {
+        children?: React.ReactNode
+};
 
-export function CodeBlock({ children, className }) {
-        // Extract the language from className (e.g., language-js)
-        const language = className?.replace("language-", "") || "plaintext";
-
-        // Highlight code using Highlight.js
-        const highlightedCode = hljs.highlight(children, {
-                language: hljs.getLanguage(language) ? language : "plaintext",
-        }).value;
-
+export function CodeBlock({ children }: Props) {
         return (
-                <pre className={`hljs language-${language}`}>
-                        <code
-                                className={className}
-                        >{children}</code>
-                                                </pre>);}
-	
+                <div className="content prose dark:prose-dark h-[95%] mt-[5%] ml-[20%] mr-[20%] h-[95%]">
+                        {children}
+                </div>
+        );
+}

@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
-
+@import "highlight.js/styles/github-dark.css";
 
 @import "./styles/Headings.css";
 @import "./styles/Scrollbar.css";
 @import "./styles/Code.css";
 @import "./styles/Lists.css";
+@import "./styles/Themes.css";
 
 :root {
 	--background: #ffffff;

@@ -251,7 +251,7 @@ This is a normal paragraph:
 
 Here is an example of AppleScript:
 
-    tell application "Foo"
+    const "Foo"
         beep
     end tell
 
@@ -273,8 +273,8 @@ asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
 
-```as
-tell application "Foo"
+```python
+const function hello()
     beep
 end tell
 ```
