@@ -2,8 +2,7 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { DarkModeProvider, DarkModeContext } from "@/app/context";
-import { useContext } from "react";
+import { DarkModeProvider } from "@/app/context";
 
 const geistSans = Geist({
         variable: "--font-geist-sans",
