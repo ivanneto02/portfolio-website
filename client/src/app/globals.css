@@ -8,6 +8,8 @@
 @import "./styles/Lists.css";
 @import "./styles/Themes.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
