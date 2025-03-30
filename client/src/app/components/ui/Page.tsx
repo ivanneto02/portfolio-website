@@ -1,3 +1,5 @@
+"use client"
+
 import { Header, Footer, Content } from "@/app/components";
 import { DarkModeContext } from "@/app/context";
 
