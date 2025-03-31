@@ -12,7 +12,7 @@
 	font-family: "Courier New", monospace;
 	font-size: 1em;
 	padding: 0 0.4em 0 0.4em;
-	color: #a37de4;
+	font-weight: 550;
 }
 
 .hljs {
@@ -29,5 +29,5 @@ code {
 	font-family: "Courier New", monospace;
 	font-size: 1em;
 	padding: 0 0.4em 0 0.4em;
-	font-weight: 400;
+	font-weight: 550;
 }
