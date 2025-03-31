@@ -5,4 +5,5 @@ export * from "./Header";
 export * from "./Content";
 export * from "./CodeBlock";
 export * from "./HeaderLink";
+export * from "./FooterLink";
 export * from "./ThemeButton";
