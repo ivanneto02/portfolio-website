@@ -7,3 +7,5 @@ export * from "./CodeBlock";
 export * from "./HeaderLink";
 export * from "./FooterLink";
 export * from "./ThemeButton";
+export * from "./ProjectCard";
+export * from "./Projects";
