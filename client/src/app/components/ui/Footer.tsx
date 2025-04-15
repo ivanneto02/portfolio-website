@@ -16,14 +16,13 @@ import { FaGithub } from "react-icons/fa6";
 import { IoDocumentTextSharp } from "react-icons/io5";
 import { FooterLink } from "./FooterLink";
 
-
 export function Footer() {
         const { darkMode } = useContext(DarkModeContext);
 
-        const className = "text-black dark:text-white divide-gray1 border-t-1 dark:border-t-gray1 border-t-dark4 divide-x-1 min-h-50 flex font-medium justify-between bg-white dark:bg-dark4 pl-[0%] pr-[0%] pt-[2%] pb-[2%] h-[20%]";
+        const className = "text-black dark:text-white divide-gray1 border-t-1 dark:border-t-gray1 border-t-dark4 divide-y-1 lg:divide-y-0 lg:divide-x-1 min-h-50 flex flex-col lg:flex-row font-medium lg:justify-between bg-white dark:bg-dark4 pl-[0%] pr-[0%] pt-[2%] pb-[2%] h-[20%]";
         return (
                 <div className={darkMode ? className + " dark" : className} >
-                        <div className="flex-grow text-center text-top">
+                        <div className="flex-grow text-center text-top pb-[5%] lg:pb-[3%]">
                                 <h6>Contact Information</h6>
                                 <div className="flex flex-col items-left pl-[15%] gap-1">
                                         <FooterLink href="mailto:ivanbatallon1@gmail.com"><MdEmail />ivanbatallon1@gmail.com</FooterLink>
@@ -32,7 +31,7 @@ export function Footer() {
                                         <FooterLink href="https://www.engr.ucr.edu/"><RiComputerFill />Computer Science</FooterLink>
                                 </div>
                         </div>
-                        <div className="flex-grow text-center text-top">
+                        <div className="flex-grow text-center text-top pb-[5%] lg:pb-[3%]">
                                 <h6>Tech Stack</h6>
                                 <div className="flex flex-col items-left pl-[15%] gap-1">
                                         <FooterLink href="https://www.typescriptlang.org/"><SiTypescript />Typescript</FooterLink>
@@ -42,7 +41,7 @@ export function Footer() {
                                         <FooterLink href="https://www.netlify.com/"><SiNetlify />Netlify</FooterLink>
                                 </div>
                         </div>
-                        <div className="flex-grow text-center text-top">
+                        <div className="flex-grow text-center text-top pb-[5%] lg:pb-[3%]">
                                 <h6>Other work</h6>
                                 <div className="flex flex-col items-left pl-[15%] gap-1">
                                         <FooterLink href="https://docs.google.com/document/d/1WJInUWfr5vqFRe2XMcU9oozOaHX8jTv-4adBut4mvHQ/edit?usp=sharing"><IoDocumentTextSharp />Resume</FooterLink>

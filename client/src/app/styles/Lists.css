@@ -11,6 +11,10 @@
 		color: #a37de4;
 	}
 
+	.header ul {
+		margin: 0;
+	}
+
 	ul {
 		margin-top: 0.5em;
 	}
