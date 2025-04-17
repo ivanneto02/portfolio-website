@@ -1,1 +1,108 @@
-# Project 1 - Personal Website
+import { Feature, ImageGrid, FeatureGrid, Image, Video } from "@/app/components";
+
+import { getImageUrl } from "@/app/utils/getImageUrl";
+
+<Feature delay="0">
+# Personal Website
+</Feature>
+
+<Feature delay="300">
+### Catalog of interesting events in my life, as well as fun hobbies!
+</Feature>
+
+<Feature delay="600">
+### Try it: <a href="https://ivanneto.dev" target="_blank" rel="noreferrer">ivanneto.dev</a>
+</Feature>
+
+<FeatureGrid delay="1000" cols="3">
+	<Feature delay="0">
+		<Image src={getImageUrl("projects/personalwebsite/mainwebsiteimg1.png")} width={600} height={400} alt=""/>
+	</Feature>
+	<Feature delay="50">
+		<Image src={getImageUrl("projects/personalwebsite/mainwebsiteimg2.png")} width={600} height={400} alt=""/>
+	</Feature>
+	<Feature delay="100">
+		<Image src={getImageUrl("projects/personalwebsite/mainwebsiteimg3.png")} width={600} height={400} alt=""/>
+	</Feature>
+</FeatureGrid>
+
+<FeatureGrid delay="1400" cols="2">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo2.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+	<Feature delay="100">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo1.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+</FeatureGrid>
+
+<FeatureGrid delay="1800" cols="4">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo3.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+	<Feature delay="100">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo4.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+	<Feature delay="200">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo5.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+	<Feature delay="300">
+		<Video src={getImageUrl("projects/personalwebsite/mainwebsitevideo6.mp4")} width={600} height={400} alt="" autoPlay muted loop/>
+	</Feature>
+</FeatureGrid>
+
+<Feature delay="2400">
+## Responsive Design
+</Feature>
+
+<Feature delay="2700">
+### Website features depend on screen size
+</Feature>
+
+<FeatureGrid delay="3000" cols="2">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/responsivevideo1.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+	<Feature delay="200">
+		<Video src={getImageUrl("projects/personalwebsite/responsivevideo2.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+</FeatureGrid>
+
+<Feature delay="3500">
+## Mobile Support
+</Feature>
+
+<Feature delay="3800">
+### Most mobile device screens are supported!
+</Feature>
+
+<FeatureGrid delay="4100" cols="1">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/mobilevideo2.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+</FeatureGrid>
+
+<FeatureGrid delay="4400" cols="2">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/mobilevideo3.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+	<Feature delay="200">
+		<Video src={getImageUrl("projects/personalwebsite/mobilevideo1.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+</FeatureGrid>
+
+<Feature delay="4900">
+## Content Delivery
+</Feature>
+
+<Feature delay="5200">
+	### Content is randomized to give you a different experience every time!
+</Feature>
+
+<FeatureGrid delay="5500" cols="2">
+	<Feature delay="0">
+		<Video src={getImageUrl("projects/personalwebsite/contentvideo1.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+	<Feature delay="200">
+		<Video src={getImageUrl("projects/personalwebsite/contentvideo2.mp4")} width={600} height={400} alt=""/>
+	</Feature>
+</FeatureGrid>

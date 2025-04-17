@@ -6,7 +6,7 @@ const nextConfig = {
     reactStrictMode: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
     images: {
-        domains: ["d2zcny2mccgucp.cloudfront.net"],
+        domains: ["d2zcny2mccgucp.cloudfront.net", "placehold.co"],
     },
     // Optionally, add any other Next.js config below
 }
