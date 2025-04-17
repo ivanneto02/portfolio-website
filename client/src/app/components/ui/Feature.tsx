@@ -18,7 +18,7 @@ export function Feature(props: Props) {
         return () => clearTimeout(timeout); // in case component gets unmounted
     }, [props.delay]);
 
-    var className = "p-0 m-0 transition ease-in-out";
+    let className = "p-0 m-0 transition ease-in-out";
 
     return (
         <div className={loaded ? className + " opacity-100 scale-100" : className + " opacity-0 scale-125"}>

@@ -20,7 +20,7 @@ export function FeatureGrid(props: Props) {
     useEffect(() => {
         const timeout = setTimeout(() => setLoaded(true), parseInt(props.delay));
         return () => clearTimeout(timeout); // in case component gets unmounted
-    }, []);
+    }, [props.delay]);
 
     /* We need this logic due to how TailwindCSS applies
      * styles...*/
@@ -33,7 +33,7 @@ export function FeatureGrid(props: Props) {
         default: cols = "lg:grid-cols-2"; break;
     }
 
-    var className = `m-0 mb-4 p-0 grid grid-cols-1 gap-4 ${cols}`;
+    let className = `m-0 mb-4 p-0 grid grid-cols-1 gap-4 ${cols}`;
 
     return (
         <div className={loaded ? className + " opacity-100 scale-100" : className + " opacity-0 scale-125"}>
