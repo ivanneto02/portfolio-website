@@ -18,7 +18,7 @@ export function Header() {
     return (
         <div className={darkMode ? className + "dark" : className}>
             <div className="pb-[3%] lg:pb-[0%]"><HeaderLink href="https://ivanneto.dev"><FaArrowLeft /><Image width={100} height={100} className="w-10 h-10 rounded-full" src="/favicon.ico" alt="Rounded avatar"></Image>ivanneto.dev</HeaderLink></div>
-            <div><HeaderLink href="/"><HiHome />Home</HeaderLink></div>
+            <div><HeaderLink href="/" target="_self"><HiHome />Home</HeaderLink></div>
             <div className="lg:pb-[0%]"><ul className="flex gap-7 flex-row">
                 <HeaderLink href="https://docs.google.com/document/d/1WJInUWfr5vqFRe2XMcU9oozOaHX8jTv-4adBut4mvHQ/edit?usp=sharing"> <IoDocumentTextSharp /> Resume</HeaderLink>
                 <HeaderLink href="https://www.linkedin.com/in/ivan-neto/"><FaLinkedin /> Linkedin</HeaderLink>

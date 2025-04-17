@@ -9,3 +9,8 @@ export * from "./FooterLink";
 export * from "./ThemeButton";
 export * from "./ProjectCard";
 export * from "./Projects";
+export * from "./Feature";
+export * from "./ImageGrid";
+export * from "./FeatureGrid";
+export * from "./Image";
+export * from "./Video";
