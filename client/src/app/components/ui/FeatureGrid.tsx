@@ -33,7 +33,7 @@ export function FeatureGrid(props: Props) {
         default: cols = "lg:grid-cols-2"; break;
     }
 
-    let className = `m-0 mb-4 p-0 grid grid-cols-1 gap-4 ${cols}`;
+    const className = `m-0 mb-4 p-0 grid grid-cols-1 gap-4 ${cols}`;
 
     return (
         <div className={loaded ? className + " opacity-100 scale-100" : className + " opacity-0 scale-125"}>
