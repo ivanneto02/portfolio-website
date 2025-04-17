@@ -16,7 +16,7 @@ export function Feature(props: Props) {
     useEffect(() => {
         const timeout = setTimeout(() => setLoaded(true), parseInt(props.delay));
         return () => clearTimeout(timeout); // in case component gets unmounted
-    }, []);
+    }, [props.delay]);
 
     var className = "p-0 m-0 transition ease-in-out";
 

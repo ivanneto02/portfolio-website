@@ -9,7 +9,7 @@ export function ImageGrid(props: Props) {
 
     /* We need this logic due to how TailwindCSS applies
      * styles...*/
-    var cols = "";
+    let cols = "";
     switch (props.cols) {
         case "1": cols = "lg:grid-cols-1"; break;
         case "2": cols = "lg:grid-cols-2"; break;
