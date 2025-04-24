@@ -7,66 +7,66 @@ import { ProjectCard } from "./ProjectCard";
 import { Feature } from "@/app/components";
 
 interface ProjectResponseType {
-    name: string;
-    img_src: string;
-    route: string;
-    date: string;
-    description: string;
-    thumbnail: string;
+        name: string;
+        img_src: string;
+        route: string;
+        date: string;
+        description: string;
+        thumbnail: string;
 };
 
 export function Projects() {
-    const [projects, setProjects] = useState<Array<ProjectResponseType> | undefined>(undefined);
+        const [projects, setProjects] = useState<Array<ProjectResponseType> | undefined>(undefined);
 
-    useEffect(() => {
-        const loadProjects = (response: Array<ProjectResponseType>) => {
-            const rows = response.map((item) => (
-                {
-                    name: item.name,
-                    img_src: getImageUrl(`projects/${item.route}/${item.thumbnail}`),
-                    route: `/projects/${item.route}`,
-                    date: item.date,
-                    description: item.description,
-                    thumbnail: item.thumbnail,
+        useEffect(() => {
+                const loadProjects = (response: Array<ProjectResponseType>) => {
+                        const rows = response.map((item) => (
+                                {
+                                        name: item.name,
+                                        img_src: getImageUrl(`projects/${item.route}/${item.thumbnail}`),
+                                        route: `/projects/${item.route}`,
+                                        date: item.date,
+                                        description: item.description,
+                                        thumbnail: item.thumbnail,
+                                }
+                        ));
+                        return rows;
                 }
-            ));
-            return rows;
-        }
 
-        const writeProjects = async () => {
-            try {
-                const res = await fetch(getManifestUrl("projects"))
-                    .then(res => res.json())
-                    .then(res => loadProjects(res));
+                const writeProjects = async () => {
+                        try {
+                                const res = await fetch(getManifestUrl("projects"))
+                                        .then(res => res.json())
+                                        .then(res => loadProjects(res));
 
-                setProjects(res);
-            }
-            catch (error) {
-                console.error("Adding data error:", error);
-                setProjects([]);
-            }
-        }
+                                setProjects(res);
+                        }
+                        catch (error) {
+                                console.error("Adding data error:", error);
+                                setProjects([]);
+                        }
+                }
 
-        writeProjects();
+                writeProjects();
 
-    }, []);
+        }, []);
 
-    return (
-        <>
-            {
-                projects?.map((item, index) => (
-                    <Feature key={index} delay="0">
-                        <ProjectCard
-                            img_src={item.img_src}
-                            title={item.name}
-                            description={item.description}
-                            date={item.date}
-                            href={item.route}
-                        />
-                    </Feature>
-                ))
-            }
-        </>
-    );
+        return (
+                <>
+                        {
+                                projects?.map((item, index) => (
+                                        <Feature key={index} delay="0">
+                                                <ProjectCard
+                                                        img_src={item.img_src}
+                                                        title={item.name}
+                                                        description={item.description}
+                                                        date={item.date}
+                                                        href={item.route}
+                                                />
+                                        </Feature>
+                                ))
+                        }
+                </>
+        );
 }
 

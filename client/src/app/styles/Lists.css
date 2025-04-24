@@ -41,24 +41,12 @@
 		background-color: #e3e3e3;
 	}
 
-	a:hover {
-		color: #a37de4;
-		transition: 0.3s ease;
-	}
-
-	.dark a:hover {
-		color: #a37de4;
-		transition: 0.3s ease;
-	}
-
 	ul a {
 		color: black;
-		text-decoration: none;
 	}
 
 	.dark ul a {
 		color: white;
-		text-decoration: none;
 	}
 
 	a {
